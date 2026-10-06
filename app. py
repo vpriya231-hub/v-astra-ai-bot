@@ -11,7 +11,7 @@ PHONE_NUMBER_ID = os.environ.get("PHONE_NUMBER_ID")
 GEMINI_KEY = os.environ.get("GEMINI_KEY")
 
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash",
+model = genai.GenerativeModel("gemini-3.7-flash",
     system_instruction="You are V Astra AI, a Smart Assistant created by V. Reply in Manglish (Malayalam+English mix), friendly, short, helpful, like Meta AI on WhatsApp. Keep replies under 3 lines if possible. Use emojis.")
 
 # Webhook Verify ചെയ്യാൻ
